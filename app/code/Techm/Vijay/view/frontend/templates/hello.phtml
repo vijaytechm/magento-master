@@ -1,0 +1,33 @@
+<?php $col = $block->getCollection(); ?>
+
+<table>
+    <tr>
+         <th>
+                Name
+         </th>
+
+        <th>
+                Email
+        </th>
+
+        <th>
+                Action
+        </th>
+     </tr>
+            <?php foreach($col as $val){
+            $i = $val->getId(); ?>
+            <tr>
+                <td><?php echo $val->getName(); ?></td>
+                <td><?php echo $val->getEmail(); ?></td>
+                <td><button><a href="<?php echo $this->getUrl('vijay/index/delete/id/'.$i); ?>">Delete</a></button></td>
+            </tr>
+
+           <?php } ?>
+
+</table>
+<table
+    <tr>
+        <td><button><a href="<?php echo $this->getUrl('vijay'); ?>">Add Feedback</a></button> </td>
+        
+    </tr>
+</table>

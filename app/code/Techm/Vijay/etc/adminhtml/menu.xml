@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Techm_Vijay" title="Techm FeedBack" module="Techm_Vijay" sortOrder="20" dependsOnModule="Techm_Vijay" resource="Techm_Vijay::feedback"/>
+        <add id="Techm_Vijay::index" title="FeedBack" module="Techm_Vijay" action="feedback/index/index" parent="Techm_Vijay" sortOrder="20" dependsOnModule="Techm_Vijay" resource="Techm_Vijay::feedback"/>
+    </menu>
+</config>
