@@ -40,4 +40,20 @@
 	</virtualType>
 
 
+
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="techm_vijay_post_listing_data_source" xsi:type="string">Techm\Vijay\Model\ResourceModel\Feedback\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Techm\Vijay\Model\ResourceModel\Feedback\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">feedback_form</argument>
+            <argument name="resourceModel" xsi:type="string">Techm\Vijay\Model\ResourceModel\Feedback</argument>
+        </arguments>
+    </virtualType>
+
+
 </config>

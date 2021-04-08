@@ -232,6 +232,8 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Mageplaza_Simpleshipping' => 1,
+        'Techm_CustomFields' => 1,
+        'Techm_DeclarativeSchema' => 1,
         'Techm_Testpayment' => 1,
         'Techm_Vijay' => 1,
         'Temando_Shipping' => 1,

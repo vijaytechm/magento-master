@@ -1,3 +1,22 @@
+<?php
+
+/*$block->getCatalogSession()->setMyName('Mageplaza');
+echo $block->getCatalogSession()->getMyName() . '<br />'; // output: Mageplaza
+ 
+$block->getCheckoutSession()->setTestData('Hello World');
+echo $block->getCheckoutSession()->getTestData() . '<br />'; // output: Hello World
+ 
+$block->getCheckoutSession()->setTestHello('Test Hello Value');
+echo $block->getCheckoutSession()->getTestHello() . '<br />';
+
+$block->getCatalogSession()->unsMyName();
+$block->getCheckoutSession()->unsTestData();
+$block->getCustomerSession()->unsTestHello();*/
+
+
+if ($block->getCustomerSession()->isLoggedIn()) { ?>
+
+
 <div class="row">
     <div class="col-md-8">
         <form name="addData" method="post" id="addData" class="form"
@@ -53,6 +72,16 @@
         </form>
     </div>
 </div>
+
+<?php } 
+else{
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$redirect = $objectManager->get('\Magento\Framework\App\Response\Http');
+$redirect->setRedirect('vijay/index/display');
+
+}
+?>
 
 <script type="text/javascript">
     require([
